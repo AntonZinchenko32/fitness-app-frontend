@@ -1,2 +1,0 @@
-import{q as n,al as s,t as r}from"./index-0cf7juPl.js";//! Чисто для прикладу як має бути зробив, реалізуйте таку логіку як зараз є але можливо якимось кращим підходом
-const u=()=>{const[t,a]=n.useState(5),e=s();return n.useEffect(()=>{const o=setInterval(()=>a(t-1),1e3);if(t===0)return e("/"),()=>clearInterval(o)},[t,e]),r.jsxs("div",{children:["Page not found, redirecting to the homepage in ",t]})};export{u as default};
