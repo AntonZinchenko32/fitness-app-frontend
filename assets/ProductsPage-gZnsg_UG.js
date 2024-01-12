@@ -1,4 +1,4 @@
-import{j as e,n as r,r as p,C as l}from"./index-Ca3zUmwi.js";import{S as x}from"./InputPrimary.styled-2xHT0SgY.js";const u=({placeholder:t,bordercolor:s,...n})=>e.jsx(x,{placeholder:t,bordercolor:s,...n}),h=r.svg`
+import{j as e,n as r,r as p,C as l}from"./index-JnyuxhUT.js";import{S as x}from"./InputPrimary.styled--3c9BP_k.js";const u=({placeholder:t,bordercolor:s,...n})=>e.jsx(x,{placeholder:t,bordercolor:s,...n}),h=r.svg`
   width: ${({width:t})=>t};
   height: ${({height:t})=>t};
 
