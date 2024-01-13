@@ -1,2 +1,2 @@
-import{r as n,ah as r,j as s}from"./index-EHOMzuBz.js";//! Чисто для прикладу як має бути зробив, реалізуйте таку логіку як зараз є але можливо якимось кращим підходом
+import{r as n,ah as r,j as s}from"./index-P-idwfza.js";//! Чисто для прикладу як має бути зробив, реалізуйте таку логіку як зараз є але можливо якимось кращим підходом
 const u=()=>{const[t,a]=n.useState(5),e=r();return n.useEffect(()=>{const o=setInterval(()=>a(t-1),1e3);if(t===0)return e("/"),()=>clearInterval(o)},[t,e]),s.jsxs("div",{children:["Page not found, redirecting to the homepage in ",t]})};export{u as default};
