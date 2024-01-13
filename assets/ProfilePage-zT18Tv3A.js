@@ -1,4 +1,4 @@
-import{n as t,B as r,j as e,C as o}from"./index-P-idwfza.js";import{I as i}from"./Icon-ZQx7ADUN.js";const s=t.h2`
+import{n as t,B as r,j as e,C as o}from"./index-PPNk6wrm.js";import{I as i}from"./Icon-nw9NH3kR.js";const s=t.h2`
 margin: 40px 0;
 text-align: center;
 `,d=t.div`
