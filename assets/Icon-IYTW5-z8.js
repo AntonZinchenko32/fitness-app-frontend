@@ -1,1 +1,0 @@
-import{j as s,h as p}from"./index-iz7jYxxu.js";const i="/fitness-app-frontend/assets/sprite-YOWT9Q9l.svg",c=({name:t,width:e="20px",height:n="20px",fill:r,stroke:o})=>s.jsx(p,{width:e,height:n,fill:r,stroke:o,children:s.jsx("use",{xlinkHref:`${i}#icon-${t}`})});export{c as I};
