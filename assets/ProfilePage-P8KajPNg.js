@@ -1,4 +1,4 @@
-import{n as t,B as c,r as x,j as e,C as l}from"./index-ftnqwGf3.js";import{I as n}from"./Icon-nar52au5.js";const p=t.div`
+import{n as t,B as c,b as x,j as e,C as l}from"./index-iz7jYxxu.js";import{I as n}from"./Icon-IYTW5-z8.js";const p=t.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
