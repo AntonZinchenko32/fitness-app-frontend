@@ -1,4 +1,4 @@
-import{j as e,T as u,n as r,b as g,I as a,B as m,S as n,C as j}from"./index-JTsaKQwp.js";import{c as b,b as d,d as v,a as y,u as f}from"./index.esm-F1bYOLUn.js";const W=({text:i})=>e.jsx(u,{children:i}),C=r.div`
+import{j as e,T as u,n as r,b as g,I as a,B as m,S as n,C as j}from"./index-DTxfbDWE.js";import{c as b,b as d,d as v,a as y,u as f}from"./index.esm--zpkwpKI.js";const W=({text:i})=>e.jsx(u,{children:i}),C=r.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
