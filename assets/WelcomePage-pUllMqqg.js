@@ -1,4 +1,4 @@
-import{n as e,j as i,N as n,B as a,C as t}from"./index-qhZ5vZBG.js";import{i as d}from"./imgForWelcomePage-t-lFdlDu.js";const x=e.h1`
+import{n as e,j as i,N as n,B as a,C as t}from"./index-Or2z3A5G.js";import{i as d}from"./imgForWelcomePage-t-lFdlDu.js";const x=e.h1`
 width: 598px;
 height: 234px;
 font-size: 70px;
