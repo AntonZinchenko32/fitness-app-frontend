@@ -1,4 +1,4 @@
-import{n as i,j as e,I as t,C as b}from"./index-jLpKp5yb.js";import{P as j}from"./PageTitle-k71jpbrD.js";const m=i.div`
+import{n as i,j as e,I as t,C as b}from"./index-8ioFYwVp.js";import{P as j}from"./PageTitle-8GoOLhfh.js";const m=i.div`
 margin: 40px 0 20px 0 ;
 display: flex;
 flex-wrap: wrap;
