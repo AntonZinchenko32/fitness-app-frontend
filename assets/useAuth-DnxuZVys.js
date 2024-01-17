@@ -1,1 +1,0 @@
-import{h as s,bv as g,bw as i,bx as l,by as b,bz as u,bA as I,bB as d}from"./index-x3BMSih9.js";const p=()=>{const e=s(g),t=s(i),o=s(l),n=s(b),c=s(u),r=s(I),a=s(d);return{user:e,isLoggedIn:t,isLoading:o,isRefreshing:n,error:c,type:r,token:a}};export{p as u};
