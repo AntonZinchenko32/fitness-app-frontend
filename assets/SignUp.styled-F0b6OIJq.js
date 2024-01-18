@@ -1,4 +1,4 @@
-import{n as o,b as n}from"./index-2dlK1RkK.js";const i=o.form`
+import{n as o,b as n}from"./index-s0WOFrYQ.js";const i=o.form`
 width: 500px;
 display: flex;
 flex-direction: column;
