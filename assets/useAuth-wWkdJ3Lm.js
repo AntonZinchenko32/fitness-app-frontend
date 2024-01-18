@@ -1,1 +1,0 @@
-import{h as e}from"./index-N6ACb7Ih.js";const i=s=>s.auth.user,a=s=>s.auth.token,g=s=>s.auth.isLoggedIn,h=s=>s.auth.isLoading,l=s=>s.auth.isRefreshing,d=s=>s.auth.error,I=s=>s.auth.type,p=()=>{const s=e(i),t=e(g),o=e(h),n=e(l),c=e(d),r=e(I),u=e(a);return{user:s,isLoggedIn:t,isLoading:o,isRefreshing:n,error:c,type:r,token:u}};export{p as u};
