@@ -1,1 +1,0 @@
-import{j as u,ca as c}from"./index-Ud3C7hIX.js";const x=({type:t,text:o,sizes:r,padding:s,fontSize:n,onclick:a,disabled:i,htmlType:m})=>u.jsx(c,{type:t,sizes:r,fontSize:n,padding:s,onClick:a,disabled:i,htmlType:m,children:o});export{x as P};
