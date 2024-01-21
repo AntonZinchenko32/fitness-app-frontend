@@ -1,1 +1,0 @@
-import{j as u,ce as a}from"./index-9sNlvgP-.js";const x=({type:t,text:o,sizes:r,padding:s,fontSize:n,onclick:e,disabled:i,htmlType:m})=>u.jsx(a,{type:t,sizes:r,fontSize:n,padding:s,onClick:e,disabled:i,htmlType:m,children:o});export{x as P};
