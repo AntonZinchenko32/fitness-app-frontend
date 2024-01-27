@@ -1,1 +1,0 @@
-import{j as a,cf as c}from"./index-aLh4mksZ.js";const x=({type:t,text:o,sizes:r,padding:s,fontSize:n,onclick:i,disabled:m,htmlType:u})=>a.jsx(c,{type:t,sizes:r,fontSize:n,padding:s,onClick:i,disabled:m,htmlType:u,children:o});export{x as P};
