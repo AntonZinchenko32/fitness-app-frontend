@@ -1,12 +1,12 @@
 import styled from '@emotion/styled';
+
 const Product = styled.li`
-
-@media screen and (min-width: 768px) {
-  display:flex;
-  gap:8px;
-  white-space: nowrap;
-
- };
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 8px;
+    white-space: nowrap;
+    margin-right: 10px;
+  }
 `;
 
 const TitleCol = styled.li`
@@ -17,7 +17,7 @@ const TitleCol = styled.li`
   line-height: 18px;
   margin-bottom: 8px;
   @media screen and (min-width: 768px) {
-   display:none;
+    display: none;
   }
 `;
 
@@ -29,105 +29,109 @@ const ValueCol = styled.li`
   border: 1px solid rgba(239, 237, 232, 0.3);
   margin-bottom: 16px;
   text-overflow: ellipsis;
-   overflow:hidden;
+  overflow: hidden;
   @media screen and (min-width: 768px) {
-
-    margin-bottom:0px;
-    width:128px;
+    margin-bottom: 0px;
+    width: 128px;
     font-size: 16px;
     line-height: 18px;
     @media screen and (min-width: 1440px) {
-      width:166px;
-     }
-   }
+      width: 166px;
+    }
+  }
 `;
-const ValueColTitle=styled.li`
-font-size: 14px;
-line-height: 18px;
-padding: 10px 0 10px 14px;
-border-radius: 12px;
-border: 1px solid rgba(239, 237, 232, 0.3);
-margin-bottom: 16px;
-text-overflow: ellipsis;
-overflow:hidden;
-@media screen and (min-width: 768px) {
-
-  width:204px;
-  max-height:40px;
-  margin-bottom:0px;
-
-  font-size: 16px;
+const ValueColTitle = styled.li`
+  font-size: 14px;
   line-height: 18px;
- }
- @media screen and (min-width: 1440px) {
-  width:212px;
- }`
+  padding: 10px 0 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(239, 237, 232, 0.3);
+  margin-bottom: 16px;
+
+  p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 204px;
+    max-height: 40px;
+    margin-bottom: 0px;
+
+    font-size: 16px;
+    line-height: 18px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 212px;
+  }
+`;
 
 const Row = styled.ul``;
 
 const TopRow = styled.div`
-@media screen and (min-width: 768px) {
-  display:flex;
-  gap:8px;
- }`;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 8px;
+  }
+`;
 
-const BottomRow = styled.div` 
-@media screen and (min-width: 768px) {
-
-}`;
+const BottomRow = styled.div`
+  @media screen and (min-width: 768px) {
+  }
+`;
 
 const MobileRow = styled.ul`
-
   display: flex;
   gap: 16px;
   justify-content: start;
   align-items: center;
   @media screen and (min-width: 768px) {
-
-gap:8px;
+    gap: 8px;
   }
-  &:nth-of-type(1){display:none;}
+  &:nth-of-type(1) {
+    display: none;
+  }
 `;
 
-const MobileTitleRow=styled.ul`
-display: flex;
-gap: 16px;
-justify-content: start;
-align-items: center;
-@media screen and (min-width: 768px) {
-display:none:
-
- 
-}`
+const MobileTitleRow = styled.ul`
+  display: flex;
+  gap: 16px;
+  justify-content: start;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+`;
 
 const MiniValueCol = styled(ValueCol)`
   margin-bottom: 0px;
   width: 80px;
   @media screen and (min-width: 768px) {
-    width:90px;
+    width: 90px;
     font-size: 16px;
     line-height: 18px;
-    @media screen and (min-width: 1440px) {width:110px;}
-    
+    @media screen and (min-width: 1440px) {
+      width: 110px;
     }
+  }
 `;
 
 const MiniTitleCol = styled(TitleCol)`
   width: 80px;
-
 `;
 
-const DesktopTitleWrap=styled.ul`
-display:flex:
-`
-const DesktopTitle=styled.li``
+const DesktopTitleWrap = styled.ul`
+  display: flex;
+`;
+const DesktopTitle = styled.li``;
 
 const IconWrap = styled.li`
   width: 20px;
   height: 20px;
+  cursor: pointer;
 `;
 
-const TitlesRowDesktop= styled.ul``
+const TitlesRowDesktop = styled.ul``;
 
 const Status = styled.p`
   display: flex;
@@ -145,7 +149,6 @@ const StatusRound = styled.span<{ recommended: boolean }>`
   border-radius: 50%;
 `;
 
-
 export {
   Product,
   TitleCol,
@@ -161,5 +164,7 @@ export {
   TitlesRowDesktop,
   ValueColTitle,
   Status,
-  StatusRound,DesktopTitle,DesktopTitleWrap
+  StatusRound,
+  DesktopTitle,
+  DesktopTitleWrap,
 };

@@ -5,15 +5,13 @@ import { clearToken, setToken } from './token.ts';
 const baseURL = 'https://goit-be.onrender.com/';
 
 interface RetryQueueItem {
-  resolve: (value?: any) => void;
-  reject: (error?: any) => void;
+  resolve: (value) => void;
+  reject: (error) => void;
   config: AxiosRequestConfig;
 }
 
-// Create a list to hold the request queue
 const refreshAndRetryQueue: RetryQueueItem[] = [];
 
-// Flag to prevent multiple token refresh requests
 let isRefreshing = false;
 
 const axiosInstance = axios.create({
@@ -99,7 +97,7 @@ axiosInstance.interceptors.response.use(
           }
           return axios(config);
         } catch (e) {
-          clearToken()
+          clearToken();
         } finally {
           isRefreshing = false;
         }
