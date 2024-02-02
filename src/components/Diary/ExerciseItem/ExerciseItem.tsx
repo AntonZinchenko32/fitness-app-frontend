@@ -1,8 +1,4 @@
-import React from 'react';
-
-import { Icon } from '../../Icon';
-import { Exercise } from '../../../redux/diary/types';
-import { AppDispatch } from '../../../redux';
+import { useDispatch } from 'react-redux';
 
 import {
   ExerciseWrap,
@@ -19,25 +15,25 @@ import {
   TopRow,
   BottomRow,
 } from './ExerciseItem.styled';
+import { Icon } from '../../Icon';
+import { ConfigProvider, Popconfirm, Popover } from 'antd';
+
 import { deleteDiaryExercise } from '../../../redux/diary';
-import { useDispatch } from 'react-redux';
-import { Button, ConfigProvider, Popconfirm, Popover } from 'antd';
+import { Exercise } from '../../../redux/diary/types';
+import { AppDispatch } from '../../../redux';
 
-const ucFirst = str => {
-  if (!str) return str;
-
-  return str[0].toUpperCase() + str.slice(1);
-};
 interface ExerciseItemProps {
   exercise: Exercise;
   id: string;
 }
+
 const ExerciseItem: React.FC<ExerciseItemProps> = ({ exercise, id }) => {
   const dispatch = useDispatch<AppDispatch>();
 
   const handleExerciseDelete = () => {
     dispatch(deleteDiaryExercise(id));
   };
+
   return (
     <ConfigProvider
       theme={{
@@ -54,7 +50,7 @@ const ExerciseItem: React.FC<ExerciseItemProps> = ({ exercise, id }) => {
             <TitleCol>Body Part</TitleCol>
             <Popover placement="topLeft" content={exercise.bodyPart}>
               <ValueCol>
-                <p>{ucFirst(exercise.bodyPart)}</p>
+                <p>{exercise.bodyPart}</p>
               </ValueCol>
             </Popover>
           </Row>
@@ -62,7 +58,7 @@ const ExerciseItem: React.FC<ExerciseItemProps> = ({ exercise, id }) => {
             <TitleCol>Equipment</TitleCol>
             <Popover placement="topLeft" content={exercise.equipment}>
               <ValueColTitle>
-                <p>{ucFirst(exercise.equipment)}</p>
+                <p>{exercise.equipment}</p>
               </ValueColTitle>
             </Popover>
           </Row>
@@ -70,7 +66,7 @@ const ExerciseItem: React.FC<ExerciseItemProps> = ({ exercise, id }) => {
             <TitleCol>Name</TitleCol>
             <Popover placement="topLeft" content={exercise.name}>
               <ValueColName>
-                <p>{ucFirst(exercise.name)}</p>
+                <p>{exercise.name}</p>
               </ValueColName>
             </Popover>
           </Row>
@@ -91,15 +87,21 @@ const ExerciseItem: React.FC<ExerciseItemProps> = ({ exercise, id }) => {
               <p>{exercise.calories || 0}</p>
             </MiniValueCol>
             <MiniValueCol>{exercise.time}</MiniValueCol>
-            <IconWrap className="icon-delete">
+            <IconWrap>
               <Popconfirm
                 title="Delete a product"
                 description="Are you sure to delete this product?"
                 onConfirm={handleExerciseDelete}
               >
-                <Button
-                  type="text"
-                  style={{ padding: 0, height: 0, margin: 0 }}
+                <button
+                  type="button"
+                  style={{
+                    padding: 0,
+                    cursor: 'pointer',
+                    backgroundColor: 'transparent',
+                    border: 'none',
+                  }}
+                  aria-label="delete exercise"
                 >
                   <Icon
                     name="delete"
@@ -107,7 +109,7 @@ const ExerciseItem: React.FC<ExerciseItemProps> = ({ exercise, id }) => {
                     iconHeight={{ mobile: '20px', tablet: '20px' }}
                     stroke="#EF8964"
                   />
-                </Button>
+                </button>
               </Popconfirm>
             </IconWrap>
           </MobileRow>
